@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qbi-Vq-8Ex"/>
+                        <viewControllerLayoutGuide type="bottom" id="GH9-WU-5eh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3lZ-pC-778">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZw-fN-xm5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="X9b-cS-TWE" appends="YES" id="lkT-rj-taA"/>
+                                </connections>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qii-hK-aFk">
+                                <rect key="frame" x="156" y="28" width="63" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="ch.png" translatesAutoresizingMaskIntoConstraints="NO" id="xZq-S5-o4Q">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-xZ-4MG" userLabel="start text">
+                                <rect key="frame" x="176" y="602" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzj-HP-btf">
+                                <rect key="frame" x="187.5" y="150" width="0.0" height="467"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="1" green="0.059605572916622496" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hZw-fN-xm5" secondAttribute="trailing" id="5Er-AD-2L2"/>
+                            <constraint firstItem="hZw-fN-xm5" firstAttribute="leading" secondItem="3lZ-pC-778" secondAttribute="leading" id="7NI-w5-EWS"/>
+                            <constraint firstItem="xZq-S5-o4Q" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="Jz1-ge-hg4"/>
+                            <constraint firstItem="hZw-fN-xm5" firstAttribute="top" secondItem="3lZ-pC-778" secondAttribute="top" id="Z75-Io-7Do"/>
+                            <constraint firstItem="Mzj-HP-btf" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="ZFN-av-qcB"/>
+                            <constraint firstItem="Mzj-HP-btf" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="ZSK-en-XPK"/>
+                            <constraint firstItem="Mzj-HP-btf" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="aYo-fd-dGi"/>
+                            <constraint firstItem="GH9-WU-5eh" firstAttribute="top" secondItem="hZw-fN-xm5" secondAttribute="bottom" id="dXi-SH-1j3"/>
+                            <constraint firstItem="GH9-WU-5eh" firstAttribute="top" secondItem="kpv-xZ-4MG" secondAttribute="bottom" constant="44" id="gZb-U8-V7E"/>
+                            <constraint firstItem="kpv-xZ-4MG" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="jJb-kC-iZw"/>
+                            <constraint firstAttribute="bottom" secondItem="Mzj-HP-btf" secondAttribute="bottom" constant="50" id="k4d-C7-ipr"/>
+                            <constraint firstItem="qii-hK-aFk" firstAttribute="top" secondItem="Qbi-Vq-8Ex" secondAttribute="bottom" constant="8" id="nhq-ed-GeK"/>
+                            <constraint firstItem="qii-hK-aFk" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="niX-dK-uUP"/>
+                            <constraint firstItem="kpv-xZ-4MG" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="qaJ-UE-I4I"/>
+                            <constraint firstItem="xZq-S5-o4Q" firstAttribute="centerY" secondItem="3lZ-pC-778" secondAttribute="centerY" id="qeY-HU-0qt"/>
+                            <constraint firstItem="kpv-xZ-4MG" firstAttribute="centerX" secondItem="3lZ-pC-778" secondAttribute="centerX" id="qnW-rd-sce"/>
+                            <constraint firstItem="Mzj-HP-btf" firstAttribute="top" secondItem="3lZ-pC-778" secondAttribute="top" constant="150" id="uhL-N0-7N9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GameOverText" destination="Mzj-HP-btf" id="9h3-rl-bGo"/>
+                        <outlet property="sceneView" destination="hZw-fN-xm5" id="fzd-a4-oL1"/>
+                        <outlet property="scoreLabel" destination="qii-hK-aFk" id="k4y-KH-bXr"/>
+                        <outlet property="welcomeText" destination="kpv-xZ-4MG" id="yJT-wr-zcS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="X9b-cS-TWE">
+                    <connections>
+                        <action selector="didTapScreen:" destination="BV1-FR-VrT" id="xbi-Pk-Fkj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ch.png" width="50" height="50"/>
+    </resources>
+</document>
